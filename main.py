@@ -4,7 +4,7 @@ from engineering import EngineeringCalculator
 
 def main():
     print("=== 계산기 프로그램 ===")
-    expression = input("계산할 식을 입력하세요 (예: 3 + 4, 2^3, (1+2j) + (2+3j)): ")
+    expression = input("계산할 식을 입력하세요 (예: 3 + 4, 2^3, (1+2j) + (2+3j)),: ")
 
     if is_complex_expression(expression):
         complex_calculator(expression)

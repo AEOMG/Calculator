@@ -9,6 +9,10 @@ def sin(x): # 테일러 급수를 이용한 사인 계산
         result += term
         term *= -x**2 / ((2 * n) * (2 * n + 1))
         n += 1
+    
+    # 작은 오차를 0으로 처리
+    if abs(result) < 1e-10:
+        return 0
     return result
 
 def cos(x): # 테일러 급수를 이용한 코사인 계산
@@ -19,4 +23,8 @@ def cos(x): # 테일러 급수를 이용한 코사인 계산
         result += term
         term *= -x**2 / ((2 * n + 1) * (2 * n + 2))
         n += 1
+    
+    # 작은 오차를 0으로 처리
+    if abs(result) < 1e-10:
+        return 0
     return result
