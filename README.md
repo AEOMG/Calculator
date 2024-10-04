@@ -24,3 +24,12 @@ cd Calculator
 ### 3. 프로젝트 실행
 
 main.py 파일을 실행시켜 주시면 됩니다.
+
+# 주요 클래스 및 파일 설명
+  basic.py: 기본 사칙연산 계산을 담당하는 Calculator 클래스.
+  
+  complex_calc.py: 복소수 연산을 수행하는 ComplexCalculator 클래스.
+  
+  engineering.py: 공학용 계산 기능을 제공하는 EngineeringCalculator 클래스.
+  
+  utils.py: 공통적으로 사용되는 유틸리티 함수 (예: 삼각함수 계산, 라디안 변환 등).
